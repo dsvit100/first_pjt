@@ -1,0 +1,39 @@
+# Django
+
+## 0. setting
+
+- `.gitignore`
+    - Windows, Python, macOS, Django
+- 가상환경 
+    - python -m venv venv
+- `README.md`
+
+## 1. Django 프로젝트
+
+1. Django 설치
+```shell
+pip install django
+```
+
+2. Django 프로젝트 생성
+```shell (터미널 창에 쓰는 문법)
+django-admin startproject 프로젝트명 .
+```
+
+3. 서버 실행 (종료 : `ctrl + c`)
+```shell
+python manage.py runserver
+```
+
+4. 앱 생성
+```shell
+django-admin startapp <app-name>
+```
+
+5. 앱 등록(`settings.py`)
+```python
+INSTALLED_APPS = [
+    ...,
+    '<app-name>',
+]
+```
