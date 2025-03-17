@@ -37,3 +37,12 @@ INSTALLED_APPS = [
     '<app-name>',
 ]
 ```
+
+6. 프로젝트 폴더 url.py
+어떤 경로로 요청을 받을지 = path('기능이름', 실행시키고싶은 함수 불러오기) *선언은 views.py에서.
+
+7. views.py
+def 함수이름(request): 함수 설정
+
+8. templates
+만든 함수가 출력되기 위한 html을 first_app 폴더에 templates 폴더를 넣고 새 파일로 html파일 작성
