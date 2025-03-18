@@ -65,3 +65,17 @@ def articles(request): # python faker = 가짜데이터를 생성해주는 라�
     }
 
     return render(request, 'articles.html', context)
+
+def ping(request):
+    return render(request, 'ping.html')
+
+def pong(request):
+    # print(request.GET['title'])
+    # print(request.GET['content'])
+    title = request.GET.get('title')
+    content = request.GET.get('content') # .get 함수는 맞는 키가 없으면 none 반환
+    context = {
+        'title': title,
+        'content': content,
+    }
+    return render(request, 'pong.html', content)

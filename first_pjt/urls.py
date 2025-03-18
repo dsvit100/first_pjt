@@ -30,4 +30,8 @@ urlpatterns = [
     path('profile/<username>/', views.profile), # <> 이 값에 어떤 것이 들어가든 모두 username으로 대응할게
     path('cube/<int:number>/', views.cube), # 장고식 해결방법 = number에 숫자 들어올 거니깐 int: 로 정수로 바꿔줌
     path('articles/', views.articles),
+
+    # 입력값 받아오는 것
+    path('ping/', views.ping),
+    path('pong/', views.pong),
 ]
